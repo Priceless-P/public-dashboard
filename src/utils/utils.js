@@ -1,6 +1,8 @@
 export function formatHashrate(hashrate, precision = 2) {
   if (hashrate === 0) return "0 H/s";
   const units = [
+    { value: 1e18, label: "EH/s" },
+    { value: 1e15, label: "PH/s" },
     { value: 1e12, label: "TH/s" },
     { value: 1e9, label: "GH/s" },
     { value: 1e6, label: "MH/s" },
